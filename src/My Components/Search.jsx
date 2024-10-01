@@ -1,7 +1,7 @@
 function Search(){
     return (
-        <div className="p-2 ">
-            <input type="text" placeholder="Search here" />
+        <div className="p-2 relative top-2 left-3 text-xl  font-light ">
+            <input type="text" placeholder="Search here" className="px-2 rounded py-1"/>
         </div>
     )
 }

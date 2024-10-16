@@ -7,6 +7,7 @@ const Contact = ({name , number}) => {
     <div className='text-amber-900 font-semibold'>
         <h1>{name}</h1>
         <h1><MdOutlineLocalPhone />{number}</h1>
+        <button>delete</button>
     </div>
   )
 }

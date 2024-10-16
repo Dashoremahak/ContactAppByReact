@@ -1,30 +1,41 @@
-function List(){
-    let list = [ob1 , ob2, ob3 , ob4]
-    let ob1 = {
-        name: "Monika Khade",
-        number: 5465465455
-    }
-    let ob2 = {
-        name:"Tanisha Kushwah",
-        number:5656565656 
-    }
-    let ob3 = {
-        name:"Kartik Khade",
-        number:6598912896 
+import Contact from "./Contact"
 
-    }
-    let ob4 = {
-        name:"Uday Dhatrak",
-        number:8785416898 
-    }
+function List(){
+    let list = [
+        {
+            id:123,
+            name: "Monika Khade",
+            number: 5465465455
+        },
+         {
+            id:124,
+            name:"Tanisha Kushwah",
+            number:5656565656 
+        },
+       {
+            id:125,
+    
+            name:"Kartik Khade",
+            number:6598912896 
+    
+        },
+         {
+            id:126,
+            name:"Uday Dhatrak",
+            number:8785416898 
+        }
+    ]
+    
   
     return(
-        <div>
-       <ul>
-        {
-            list.map(value => <li>{value}</li>)
-        }
-       </ul>
+        <div>    
+            {
+                list.map((c) => <Contact 
+                key={c.id}
+                name ={c.name}
+                number = {c.number}
+                />)
+            }
         </div>
        
     )

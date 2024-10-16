@@ -1,5 +1,5 @@
-import './App.css'
 import AddContact from './My Components/AddContact'
+import Contact from './My Components/Contact'
 import Header from './My Components/Header'
 import List from './My Components/ListofContact'
 import Search from './My Components/Search'
@@ -17,7 +17,7 @@ function App() {
    <AddContact/>
    
    </div>
-   < List />
+  
     </div>
     
 
